@@ -787,6 +787,13 @@ nav.navbar.hugenav li.dropdown ul.dropdown-menu.search-dropdown .form-control {
         width: 100%;
     }
 }
+
+/* subscribe section */
+#subscribe{
+    height: 50px;
+}
+
+
 /*  Team Section  */
 
 .team-item {
