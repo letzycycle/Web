@@ -54,6 +54,11 @@
     });
 	
 	$('.screenshot-items').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        slide: 'div',
+        cssEase: 'linear',
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
@@ -88,6 +93,17 @@
             }
         }, ]
     });
+
+    // $('.screenshot-items').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 1000,
+    //     fade: true,
+    //     slide: 'div',
+    //     cssEase: 'linear'
+    // });
 
     $.extend(true, $.magnificPopup.defaults, {
         iframe: {
