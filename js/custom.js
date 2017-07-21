@@ -43,15 +43,15 @@
 
 
 
-    $('#video-item').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
+    // $('#video-item').magnificPopup({
+    //     disableOn: 700,
+    //     type: 'iframe',
+    //
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 160,
+    //     preloader: false,
+    //     fixedContentPos: false
+    // });
 	
 	$('.screenshot-items').slick({
         autoplay: true,
@@ -148,15 +148,15 @@
 
 
     // Contact Form
-    $('.contact-form').on('submit', function(e) {
-        e.preventDefault();
-        $.post('mail/send.php', $(this).serialize()).done(function(data) {
-            $('.contact-form').fadeOut('slow', function() {
-                $('.contact-form').fadeIn('slow').html(data);
-            });
-        }).fail(function() {
-            alert('SOMETHING WENT WRONG! PLEASE TRY AGAIN.');
-        });
-    });
+    // $('.contact-form').on('submit', function(e) {
+    //     e.preventDefault();
+    //     $.post('mail/send.php', $(this).serialize()).done(function(data) {
+    //         $('.contact-form').fadeOut('slow', function() {
+    //             $('.contact-form').fadeIn('slow').html(data);
+    //         });
+    //     }).fail(function() {
+    //         alert('SOMETHING WENT WRONG! PLEASE TRY AGAIN.');
+    //     });
+    // });
 
 })();
